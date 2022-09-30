@@ -8,7 +8,8 @@ import { MongooseModule } from "@nestjs/mongoose"
 
 @Module({
   imports: [AuthModule, UserModule, 
-    MongooseModule.forRoot("mongodb+srv://orgilshdeee:Blacklist12345@cluster0.rdjpop9.mongodb.net/test"), MongooseModule.forFeature([{name:"User",schema:UserSchema}])],
+    MongooseModule.forRoot("mongodb+srv://orgilshdeee:Blacklist12345@cluster0.rdjpop9.mongodb.net/codehs-mimic"), 
+    MongooseModule.forFeature([{name:"User",schema:UserSchema}])],
   controllers: [AppController],
   providers: [AppService],
 })
