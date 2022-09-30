@@ -11,30 +11,30 @@ export class UserController{
     signup(req:Request, res: Response){
         console.log(req)
         console.log(res)
-        return this.userService.createUser()
+        return "i am signup"
     }
 
     @Get("allUser")
     getAllUser(){
-        return this.userService.getAllUser()
+        return "i am alluser"
     }
 
 
     @Get("byId")
     getById(req:Request){
         console.log(req)
-        return this.userService.getUserById(req)
+        return "i am byid"
     }
 
 
     @Delete("delete")
     delete(req:Request){
-        return this.userService.deleteUser(req)
+        return "i am delete"
     }
 
     @Put("update")
     update(req:Request){
-        return this.userService.updateUser(req);
+        return "i am update"
     }
 
 }
